@@ -3,55 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        background-color: #0a0a0a;
-        color: white;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: black;
-      }
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-      }
-      #about,
-      #capabilities {
-        padding: 50px;
-        text-align: center;
-      }
-      button {
-        background-color: #88cc44;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-      .social-links a {
-        margin: 10px;
-        color: white;
-      }
-      .skills span {
-        background-color: #222;
-        padding: 5px 10px;
-        margin: 5px;
-        display: inline-block;
-        border-radius: 5px;
-      }
-    </style>
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+    </head>
+
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <label>robert garcia</label>
+      <ul>
+        <li><a href="">Work</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Content</a></li>
+      </ul>
+    </nav>
+    <!-- First Section -->
+    <div class="About">
+      <div class="left">
+        <h2 style="color: aliceblue" class="aboutH">ABOUT ME</h2>
+      </div>
+      <div class="right">
+        <p class="first-p">
+          I am a front-end developer based in Sydney. Has Mechanical Engineering
+          background.
+        </p>
+        <p class="second-P">
+          am a front-end developer based in Sydney looking for exciting
+          opportunities. Has Mechanical Engineering background. Likes to focus
+          on accessibility when developing. Passionate and curious about solving
+          problems. Currently, I’m exploring Reactjs, Webflow and a bit of
+          Designing. While I am not programming, I enjoy playing football,
+          photography and playing Valorant. Learning more to improve skill
+        </p>
+        <div class="Last">
+          <div class="resume">
+            <button>DOWNLOAD RESUME</button>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="Image">
+      <img src="assests/first.png" alt="Profile Picture" />
+    </div>
+
+    <!-- Capabilities Section -->
+    <div class="capabilities container">
+      <div class="left">
+        <h2 class="cap">MY CAPABILITIES</h2>
+      </div>
+      <div class="right">
+        <p class="second-P">
+          I am always looking to add more skills. Morbi egestas neque eu blandit
+          fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus
+          faucibus tristique ut et dolor.
+        </p>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>jQuery</span>
+          <span>Accessibility</span>
+          <span>Figma</span>
+          <span>Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="experience container">
+      <div class="left">
+        <h2 class="cap">MY EXPERIENCE</h2>
+      </div>
+      <div class="right">
+        <div class="job">
+          <div class="job-container">
+            <h3>Freelance Developer</h3>
+            <span class="date">Nov 2023 – Present</span>
+          </div>
+          <p class="second-P">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="job">
+          <div class="job-container">
+            <h3>Front-End Intern</h3>
+            <span class="date">Sep 2023 – Nov 2023</span>
+          </div>
+          <span class="company">Roos Tech</span>
+          <p class="second-P">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connect Section -->
+    <section class="contact">
+      <div class="container">
+        <!-- Left Side (Text & Icons) -->
+        <div class="contact-info left">
+          <h2 class="cap">LET’S CONNECT</h2>
+          <p>
+            Say hello at
+            <a href="mailto:robertgarcia@gmail.com" class="special"
+              >robertgarcia@gmail.com</a
+            >
+          </p>
+          <p>For more info, here’s my <a href="#" class="special">resume</a></p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="copyRight">© 2025 Robert Garcia</p>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div class="contact-form right">
+          <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
