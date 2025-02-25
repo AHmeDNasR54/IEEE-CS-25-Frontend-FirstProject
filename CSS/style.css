@@ -161,7 +161,7 @@ Width :1224px;
 Height:700px;
 Top:719px;
 Left:108px;
-Radius:16px;
+/* Radius:16px; */
   }
 
  
@@ -376,7 +376,7 @@ Radius:16px;
     text-align: center;
     border-radius: 100px;
 }
-
+/* sss */
 
 .contact-form button:hover {
     background: white;
