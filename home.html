@@ -1,311 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/home.css" />
-    <title>Home page</title>
-    <!-- import Manrope font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- import Bebas font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <!--import font awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- navigation bar -->
-    <nav>
-      <label>robert garcia</label>
-      <ul>
-        <li><a href="">Work</a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href="">Content</a></li>
-      </ul>
-    </nav>
-    <!-- first section -->
-    <div class="first-card">
-      <div class="text-box">
-        <h1>hi, i am</h1>
-        <h1>robert garcia.</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/home.css" />
+  <title>Home page</title>
+  <!-- import Manrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <!-- import Bebas font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!--import font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav>
+    <label>robert garcia</label>
+    <ul class="nav-links">
+      <li>Work</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <div class="menu-icon" id="menu-icon">&#x3d;</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li>Work</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <!-- first section -->
+  <div class="first-card">
+    <div class="text-box">
+      <h1>hi, i am </h1>
+      <h1>robert garcia.</h1>
+      <p>A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
+      <div class="btns-box">
+        <button class="contact-me">Contact Me</button>
+        <div class="circle">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </div>
+    <div class="image-box">
+      <img src="./assests/robert.png" alt="robert photo">
+    </div>
+  </div>
+  <hr>
+  <!-- second section (sction of projects) -->
+  <div class="second-card">
+    <h2>Featured Projects</h2>
+    <p>Here are some of the selected projects that showcase my passion for front-end development.</p>
+    <div class="cards-box">
+      <div class="project-card">
+        <div data-person="Conceptual Work" class="project-img-box">
+          <img class="landing" src="./assests/project1.png">
+        </div>
+        <div class="project-description-box">
+          <h3>Promotional landing page for our favorite show</h3>
+          <p>Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time.
+            Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter
+            feature to keep fans updated with the latest adventures.</p>
+          <div class="project-info">
+            <label class="P_I">Project Info</label>
+          </div>
+          <div class="project-info">
+            <label>Year</label>
+            <label>2021</label>
+          </div>
+          <div class="project-info">
+            <label>Role</label>
+            <label>Front-end Developer</label>
+          </div>
+          <div class="project-links">
+            <a href="#">
+              Live Demo
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            <a href="#">
+              See on Github
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-box">
+          <img src="./assests/project2.png">
+        </div>
+        <div class="project-description-box">
+          <h3>Blog site for World News</h3>
+          <p>Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design
+            decisions for a seamless user experience. Leveraged the challenge to enhance skills in front-end
+            development.</p>
+          <div class="project-info">
+            <label class="P_I">Project Info</label>
+          </div>
+          <div class="project-info">
+            <label>Client</label>
+            <label>World News</label>
+          </div>
+          <div class="project-info">
+            <label>Year</label>
+            <label>2022</label>
+          </div>
+          <div class="project-info">
+            <label>Role</label>
+            <label>Front-end Developer</label>
+          </div>
+          <div class="project-links">
+            <a href="#">
+              View project
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div data-person="Challenge" class="project-img-box">
+          <img class="landing" src="./assests/project3.png">
+        </div>
+        <div class="project-description-box">
+          <h3>E-commerce product page</h3>
+          <p>Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart
+            functionality, showcasing proficiency in JavaScript development.</p>
+          <div class="project-info">
+            <label class="P_I">Project Info</label>
+          </div>
+          <div class="project-info">
+            <label>Year</label>
+            <label>2024</label>
+          </div>
+          <div class="project-info">
+            <label>Role</label>
+            <label>Front-end Developer</label>
+          </div>
+          <div class="project-links">
+            <a href="#">
+              Live Demo
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            <a href="#">
+              See on Github
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div data-person="Challenge" class="project-img-box">
+          <img class="landing" src="./assests/project4.jpg">
+        </div>
+        <div class="project-description-box">
+          <h3>Twinder</h3>
+          <p>A live Geolocation app for finding tweets and twitter users around you.</p>
+          <div class="project-info">
+            <label class="P_I">Project Info</label>
+          </div>
+          <div class="project-info">
+            <label>Year</label>
+            <label>2025</label>
+          </div>
+          <div class="project-info">
+            <label>Role</label>
+            <label>Front-end Developer</label>
+          </div>
+          <div class="project-links">
+            <a href="#">
+              Live Demo
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            <a href="#">
+              See on Github
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div data-person="Mid Level" class="project-img-box">
+          <img class="landing" src="./assests/project5.png">
+        </div>
+        <div class="project-description-box">
+          <h3>Dashboard</h3>
+          <p>A dashboard , visual interface that displays key metrics, data insights, and analytics in an organized and
+            interactive manner.</p>
+          <div class="project-info">
+            <label class="P_I">Project Info</label>
+          </div>
+          <div class="project-info">
+            <label>Year</label>
+            <label>2025</label>
+          </div>
+          <div class="project-info">
+            <label>Role</label>
+            <label>Front-end Developer</label>
+          </div>
+          <div class="project-links">
+            <a href="#">
+              Live Demo
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            <a href="#">
+              See on Github
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Third section (sction of About me) -->
+  <div class="About-Me">
+    <h2>About me</h2>
+    <div class="About-me-descr">
+      <h3>I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h3>
+      <p>I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering
+        background. Likes to focus on accessibility when developing. Passionate and curious about solving problems.
+        Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing
+        football, photography and playing Valorant. Learning more to improve skill.</p>
+      <div class="project-links">
+        <a href="#">
+          More about me
+        </a>
+      </div>
+    </div>
+    <img src="./assests/robert2.png">
+  </div>
+
+  <hr>
+  <!-- connect -->
+  <!-- Connect Section -->
+  <section class="contactLast">
+    <div class="containerLast">
+      <!-- Left Side (Text & Icons) -->
+      <div class="contact-info-Last left">
+        <h2 class="cap">LET’S CONNECT</h2>
         <p>
-          A Sydney based front-end developer passionate about building
-          accessible and user friendly websites.
+          Say hello at
+          <a href="mailto:robertgarcia@gmail.com" class="special">robertgarcia@gmail.com</a>
         </p>
-        <div class="btns-box">
-          <button class="contact-me">Contact Me</button>
-          <div class="circle">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-          <div class="circle">
-            <i class="fa-brands fa-github"></i>
-          </div>
+        <p>For more info, here’s my <a href="#" class="special">resume</a></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+        <p class="copyRight">© 2025 Robert Garcia</p>
       </div>
-      <div class="image-box">
-        <img src="assests/robert.png" alt="robert photo" />
-      </div>
-    </div>
-    <hr />
-    <!-- second section (sction of projects) -->
-    <div class="second-card">
-      <h2>Featured Projects</h2>
-      <p>
-        Here are some of the selected projects that showcase my passion for
-        front-end development.
-      </p>
-      <div class="cards-box">
-        <div class="project-card">
-          <div data-person="Conceptual Work" class="project-img-box">
-            <img class="landing" src="assests/project1.png" />
-          </div>
-          <div class="project-description-box">
-            <h3>Promotional landing page for our favorite show</h3>
-            <p>
-              Teamed up with a designer to breathe life into a promotional
-              webpage for our beloved show, Adventure Time. Delivered a fully
-              responsive design with dynamic content capabilities, seamlessly
-              integrating a newsletter feature to keep fans updated with the
-              latest adventures.
-            </p>
-            <div class="project-info">
-              <label class="P_I">Project Info</label>
-            </div>
-            <div class="project-info">
-              <label>Year</label>
-              <label>2021</label>
-            </div>
-            <div class="project-info">
-              <label>Role</label>
-              <label>Front-end Developer</label>
-            </div>
-            <div class="project-links">
-              <a href="#">
-                Live Demo
-                <i class="fa-solid fa-arrow-up"></i>
-              </a>
-              <a href="#">
-                See on Github
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img-box">
-            <img class="landing" src="assests/project2.png" />
-          </div>
-          <div class="project-description-box">
-            <h3>Blog site for World News</h3>
-            <p>
-              Mastered CSS Grid complexities in building an innovative news
-              homepage, navigating intricate design decisions for a seamless
-              user experience. Leveraged the challenge to enhance skills in
-              front-end development.
-            </p>
-            <div class="project-info">
-              <label class="P_I">Project Info</label>
-            </div>
-            <div class="project-info">
-              <label>Client</label>
-              <label>World News</label>
-            </div>
-            <div class="project-info">
-              <label>Year</label>
-              <label>2022</label>
-            </div>
-            <div class="project-info">
-              <label>Role</label>
-              <label>Front-end Developer</label>
-            </div>
-            <div class="project-links">
-              <a href="#">
-                View project
-                <i class="fa-solid fa-arrow-up"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div data-person="Challenge" class="project-img-box">
-            <img class="landing" src="assests/project3.png" />
-          </div>
-          <div class="project-description-box">
-            <h3>E-commerce product page</h3>
-            <p>
-              Successfully crafted an engaging product page featuring a dynamic
-              lightbox gallery and seamless cart functionality, showcasing
-              proficiency in JavaScript development.
-            </p>
-            <div class="project-info">
-              <label class="P_I">Project Info</label>
-            </div>
-            <div class="project-info">
-              <label>Year</label>
-              <label>2024</label>
-            </div>
-            <div class="project-info">
-              <label>Role</label>
-              <label>Front-end Developer</label>
-            </div>
-            <div class="project-links">
-              <a href="#">
-                Live Demo
-                <i class="fa-solid fa-arrow-up"></i>
-              </a>
-              <a href="#">
-                See on Github
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div data-person="Challenge" class="project-img-box">
-            <img class="landing" src="assests/project4.jpg" />
-          </div>
-          <div class="project-description-box">
-            <h3>Twinder</h3>
-            <p>
-              A live Geolocation app for finding tweets and twitter users around
-              you.
-            </p>
-            <div class="project-info">
-              <label class="P_I">Project Info</label>
-            </div>
-            <div class="project-info">
-              <label>Year</label>
-              <label>2025</label>
-            </div>
-            <div class="project-info">
-              <label>Role</label>
-              <label>Front-end Developer</label>
-            </div>
-            <div class="project-links">
-              <a href="#">
-                Live Demo
-                <i class="fa-solid fa-arrow-up"></i>
-              </a>
-              <a href="#">
-                See on Github
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div data-person="Mid Level" class="project-img-box">
-            <img class="landing" src="assests/project5.png" />
-          </div>
-          <div class="project-description-box">
-            <h3>Dashboard</h3>
-            <p>
-              A dashboard , visual interface that displays key metrics, data
-              insights, and analytics in an organized and interactive manner.
-            </p>
-            <div class="project-info">
-              <label class="P_I">Project Info</label>
-            </div>
-            <div class="project-info">
-              <label>Year</label>
-              <label>2025</label>
-            </div>
-            <div class="project-info">
-              <label>Role</label>
-              <label>Front-end Developer</label>
-            </div>
-            <div class="project-links">
-              <a href="#">
-                Live Demo
-                <i class="fa-solid fa-arrow-up"></i>
-              </a>
-              <a href="#">
-                See on Github
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+
+      <!-- Right Side (Form) -->
+      <div class="contact-form right">
+        <form action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">SUBMIT</button>
+        </form>
       </div>
     </div>
-    <hr />
-    <!-- Third section (sction of About me) -->
-    <div class="About-Me">
-      <h2>About me</h2>
-      <div class="About-me-descr">
-        <h3>
-          I am a front-end developer based in Sydney. Has Mechanical Engineering
-          background.
-        </h3>
-        <p>
-          I am a front-end developer based in Sydney looking for exciting
-          opportunities. Has Mechanical Engineering background. Likes to focus
-          on accessibility when developing. Passionate and curious about solving
-          problems. Currently, I’m exploring Reactjs, Webflow and a bit of
-          Designing. While I am not programming, I enjoy playing football,
-          photography and playing Valorant. Learning more to improve skill.
-        </p>
-        <div class="project-links">
-          <a href="#"> More about me </a>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <!-- connect -->
-    <!-- Connect Section -->
-    <section class="contactLast">
-      <div class="containerLast">
-        <!-- Left Side (Text & Icons) -->
-        <div class="contact-info-Last left">
-          <h2 class="cap">LET’S CONNECT</h2>
-          <p>
-            Say hello at
-            <a href="mailto:robertgarcia@gmail.com" class="special"
-              >robertgarcia@gmail.com</a
-            >
-          </p>
-          <p>For more info, here’s my <a href="#" class="special">resume</a></p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-          <p class="copyRight">© 2025 Robert Garcia</p>
-        </div>
+  </section>
 
-        <!-- Right Side (Form) -->
-        <div class="contact-form right">
-          <form action="#" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuIcon = document.getElementById("menu-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("overlay");
 
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" />
+      function toggleMenu() {
+        mobileMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+      }
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+      menuIcon.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+      mobileMenu.addEventListener("click", toggleMenu);
+    });
+  </script>
+</body>
 
-            <button type="submit">SUBMIT</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </body>
 </html>
