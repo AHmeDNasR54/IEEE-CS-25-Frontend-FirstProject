@@ -42,6 +42,10 @@ nav>ul{
     font-size: 1rem;
     font-weight: 500;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+}
 .menu-icon {
     display: none;
     font-size: 40px;
@@ -699,3 +703,88 @@ hr{
         border-radius: 8px;
     }
 }
+/*  */
+
+/* Mobile View: Adjust Layout for Smaller Screens */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .About, .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .aboutH, .cap {
+        font-size: 2.5rem;
+    }
+    .right .first-p {
+        font-size: 1.5rem;
+    }
+    .skills {
+        justify-content: center;
+    }
+    .Image img {
+        width: 100%;
+        height: auto;
+    }
+  }
+  
+  /* Smaller Screens (Tablets & Large Phones) */
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav label {
+        font-size: 1.5rem;
+    }
+    .aboutH {
+        font-size: 2rem;
+    }
+    .right .first-p {
+        font-size: 1.3rem;
+    }
+    .skills span {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    button {
+        width: 100%;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .aboutH, .cap {
+        font-size: 1.8rem;
+    }
+    .right .first-p {
+        font-size: 1.2rem;
+    }
+    .resume button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+  }
+  

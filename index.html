@@ -32,14 +32,26 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
+    <!-- navigation bar -->
+
     <nav>
       <label>robert garcia</label>
-      <ul>
+      <ul class="nav-links">
         <li><a href="home.html">Work</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Content</a></li>
       </ul>
+      <div class="menu-icon" id="menu-icon">&#x3d;</div>
     </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li>Work</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
     <!--  -->
     <!-- First Section -->
     <div class="About">
@@ -173,5 +185,21 @@
         </div>
       </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menu-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const overlay = document.getElementById("overlay");
+
+        function toggleMenu() {
+          mobileMenu.classList.toggle("active");
+          overlay.classList.toggle("active");
+        }
+
+        menuIcon.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+        mobileMenu.addEventListener("click", toggleMenu);
+      });
+    </script>
   </body>
 </html>
